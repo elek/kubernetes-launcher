@@ -7,6 +7,7 @@ env:
 before_install:
   - go get github.com/mitchellh/gox
   - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh  
+install:
   - dep ensure
 after_success:
   - gox -osarch="linux/amd64" -output "dist/{{.OS}}_{{.Arch}}_{{.Dir}}"
