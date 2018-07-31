@@ -11,7 +11,6 @@ import (
 	"fmt"
 	"strings"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	//"k8s.io/client-go/rest"
 	"k8s.io/client-go/kubernetes"
 	"log"
 	"k8s.io/client-go/tools/clientcmd"
